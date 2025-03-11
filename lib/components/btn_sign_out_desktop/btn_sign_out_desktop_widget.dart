@@ -32,6 +32,8 @@ class _BtnSignOutDesktopWidgetState extends State<BtnSignOutDesktopWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => BtnSignOutDesktopModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

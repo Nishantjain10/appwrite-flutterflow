@@ -31,6 +31,8 @@ class _BtnSignOutTabletWidgetState extends State<BtnSignOutTabletWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => BtnSignOutTabletModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

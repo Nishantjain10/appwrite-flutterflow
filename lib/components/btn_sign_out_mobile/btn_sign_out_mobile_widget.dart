@@ -31,6 +31,8 @@ class _BtnSignOutMobileWidgetState extends State<BtnSignOutMobileWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => BtnSignOutMobileModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

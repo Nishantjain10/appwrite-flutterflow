@@ -26,6 +26,8 @@ class _SplashTabletCardWidgetState extends State<SplashTabletCardWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => SplashTabletCardModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

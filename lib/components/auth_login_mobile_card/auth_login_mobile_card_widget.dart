@@ -38,6 +38,8 @@ class _AuthLoginMobileCardWidgetState extends State<AuthLoginMobileCardWidget> {
 
     _model.passwordTextController ??= TextEditingController();
     _model.passwordFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

@@ -40,6 +40,8 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
 
     _model.passwordTextController ??= TextEditingController();
     _model.passwordFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

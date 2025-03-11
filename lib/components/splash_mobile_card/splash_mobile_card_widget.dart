@@ -26,6 +26,8 @@ class _SplashMobileCardWidgetState extends State<SplashMobileCardWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => SplashMobileCardModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

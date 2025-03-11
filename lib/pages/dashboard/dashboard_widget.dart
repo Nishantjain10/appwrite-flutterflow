@@ -43,6 +43,8 @@ class _DashboardWidgetState extends State<DashboardWidget> {
       FFAppState().appwriteUser = _model.userResult!.toString();
       safeSetState(() {});
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

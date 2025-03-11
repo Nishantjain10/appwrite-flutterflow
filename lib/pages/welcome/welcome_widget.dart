@@ -62,6 +62,8 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
         return;
       }
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

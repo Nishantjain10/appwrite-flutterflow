@@ -27,6 +27,8 @@ class _SplashDesktopCardWidgetState extends State<SplashDesktopCardWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => SplashDesktopCardModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
