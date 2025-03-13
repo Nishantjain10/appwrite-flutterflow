@@ -222,7 +222,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                   Align(
                     alignment: AlignmentDirectional(0.0, -1.0),
                     child: Container(
-                      width: 1450.0,
+                      width: 2097.5,
                       height: 48.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,

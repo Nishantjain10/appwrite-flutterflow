@@ -225,7 +225,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                   Align(
                     alignment: AlignmentDirectional(0.0, -1.0),
                     child: Container(
-                      width: 1450.0,
+                      width: 2123.0,
                       height: 48.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
